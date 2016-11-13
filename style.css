@@ -6,6 +6,10 @@ body {
 #content {
   background-color: #7EE081;
   font-size: 110%;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 #content-head {
   background-color: #71C974; 
