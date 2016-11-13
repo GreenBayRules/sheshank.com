@@ -16,6 +16,24 @@ body {
   font-size: 125%;
   text-align: center;
 }  
-nav {
+nav li > ul li{
+    display: block;
+}
 
+nav  li > ul li a {
+    color: #111;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Change the background color when mouse over items */
+nav li:hover {
+    background-color: #666;
+}
+/* display the submenu on mouse over main menu item*/
+nav li:hover > ul{
+    position:absolute;
+    display : block;
 }
