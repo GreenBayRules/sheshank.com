@@ -1,6 +1,13 @@
 body { 
   background-color: #EADDE1;
-  color: #2CA58D;
-  font-family: Calibri;
-  
+  color: #313B72;
+  font-family: Calibri; 
 }
+#content {
+  background-color: #7EE081;
+  font-size: 110%;
+}
+#content-head {
+  background-color: #62A87C; 
+  font-size: 125%;
+}  
