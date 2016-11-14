@@ -6,7 +6,7 @@ body {
 #content {
   background-color: #7EE081;
   font-size: 110%;
-  width: 60%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -16,7 +16,7 @@ body {
 }
 #content-head {
   border-top-right-radius: 20px;
-    border-top-left-radius: 100px;
+    border-top-left-radius: 20px;
   background-color: #71C974; 
   font-size: 125%;
   text-align: center;
@@ -37,7 +37,6 @@ ul {
 }
 
 li {
-    float: left;
 }
 
 li a {
