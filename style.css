@@ -6,7 +6,7 @@ body {
 #content {
   background-color: #7EE081;
   font-size: 110%;
-  width: 70%;
+  width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -31,6 +31,9 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    width: 70%;
+    max-width:960px;
+    margin:0 auto;
 }
 
 li {
