@@ -15,7 +15,8 @@ body {
     border-top-left-radius: 10px;
 }
 nav {
-  font-family: Raleway;
+  
+  font-size: 125%;
  display: block; 
 } 
 #content-head {
