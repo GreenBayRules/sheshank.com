@@ -15,7 +15,7 @@ body {
     border-top-left-radius: 10px;
 }
 nav {
-  
+  position:fixed;
   font-size: 125%;
  display: block; 
 } 
