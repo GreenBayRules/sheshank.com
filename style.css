@@ -12,6 +12,8 @@ body {
   margin-right: auto;
 }
 #content-head {
+  border-top-right-radius: 20px;
+    border-top-left-radius: 100px;
   background-color: #71C974; 
   font-size: 125%;
   text-align: center;
