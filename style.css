@@ -37,8 +37,12 @@ ul {
 }
 
 li {
-  float: left;
+  display:inline-block;
 }
+
+nav {
+ display:inline-block; 
+}  
 
 li a {
     display: block;
