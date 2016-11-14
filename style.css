@@ -1,6 +1,6 @@
 body { 
   background-color: #EADDE1;
-  color: #666;
+  color: #111;
   font-family: Calibri; 
 }
 #content {
@@ -15,6 +15,7 @@ body {
     border-top-left-radius: 10px;
 }
 nav {
+  font-family: Raleway;
  display: block; 
 } 
 #content-head {
