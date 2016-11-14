@@ -62,6 +62,10 @@ li a:hover, .dropbtn {
 }
 
 li a:hover:.active {
+  background-color:#111;
+}
+
+#drop:hover {
   background-color:#f1f1f1;
 }
 
