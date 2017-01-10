@@ -1,7 +1,7 @@
 body { 
   background-color: #EADDE1;
   color: #111;
-  font-family: font-family: Montserrat, "Helvetica Neue", sans-serif;
+
 }
 #content {
   background-color: #b7e6b9;
@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-  font-family: font-family: Montserrat, "Helvetica Neue", sans-serif;
+
   font-size: 125%;
  display: block; 
 } 
