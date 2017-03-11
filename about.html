@@ -1,4 +1,205 @@
+
 <!DOCTYPE html>
 <html>
+     <script src="sweetalert.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="sweetalert.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none" id="mySidenav">
+  <img src="http://i.imgur.com/XTpmkiX.png"/>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxxlarge w3-text-theme">Close <i class="fa fa-remove"></i></a>
+  <a href="./contact.html">Contact</a>
+  <a href="./myGames.html)">Games</a>
+  <a href="blog.sheshank.com">Blog</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-opennav"></i> 
+  <div class="w3-center">
+  <h4>100% HTML</h4>
+  <h1 class="w3-xxxlarge w3-animate-bottom">SHESHANK.COM</h1>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">SUMMARY</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">×</span>
+        <h4>Summary</h4>
+      </header>
+      <div class="w3-padding">
+        <p>In short words, he is a 7th grader.</p>
+        <p>Go to <a class="w3-btn" href="./about.html">About Me</a> to learn more!</p>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        
+      </footer>
+    </div>
+</div>
+
+<hr>
+<div class="w3-container">
+
+  <div class="w3-half w3-container">
+    
+
+     
+<div class="w3-center">
+  <h2>Who is Sheshank?</h2>
+</div>   
+
+<header class="w3-container w3-blue-grey">
+  <h2>Sheshank</h2>
+</header>
+    
+
+<div class="w3-padding w3-white">
+
+  <p>Hi! My name is Sheshank Shankar, and its nice to meet you. I am a middle-schooler with a passion for 
+  Computer Science and Law. My dream job is a Lawyer. The computer languages I know inculde: HTML, CSS, JavaScript,
+  and Java, although my preffered language is Java.</p>
+  <p>My interests include programming, reading, watching football, and play Madden Mobile. My favorite football
+  team is the Green Bay Packers, even though I don't come from Wisconsin! I have been supporting them for about 6
+  years, and my dream is to see them win a Super Bowl. I currently have a 95 OVR Madden Mobile Team, and love to 
+  play the game.</p>
+  <p>If you would like to contact me, or simply just chat, click <a href="./html">here</a></p><hr><br>
+</div>
+
+<br>
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16" style="padding: inherit;
+  position: absolute;
+  right: 0;
+
+                                
+  left: 0;
+  padding: 0.1rem;
+  background-color: #efefef;">
+  
+
+
+<img style="
+            height:100px;
+            display: block;
+            align: left;
+            float: left;
+            " src="http://i.imgur.com/XTpmkiX.png"><p style="margin-right:2%; float: right;">
+ 
+  
+<i class="fa fa-envelope" aria-hidden="true"></i>: <a href="mailto:sheshank@outlook.com">sheshank@outlook.com</a><br><i class="fa fa-phone" aria-hidden="true"></i> : (XXX) XXX-XXXX
+<br>
+
+<a href="./about.html">About | </a>
+<a href="./contact.html">Contact | </a>
+<a href="./myGames.html">Games | </a>
+<a href="blog.sheshank.com">Blog</a>
+</p>
+  
+  
+  
+</footer>
+
+<!-- Script for Sidenav, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidenav");
+    x.style.width = "100%";
+    x.style.textAlign = "center";
+    x.style.fontSize = "50px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-dark-grey";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-dark-grey", "");
+    }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+  </div>
+<div class="w3-half w3-container">
+  <img src="http://i.imgur.com/BBlzjdp.jpg" style="
+    height: 350px;
+">
+</div>
+  <!--Add the following script at the bottom of the web page (before </body></html>)-->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=37379378"></script>
+</body>
 </html>
